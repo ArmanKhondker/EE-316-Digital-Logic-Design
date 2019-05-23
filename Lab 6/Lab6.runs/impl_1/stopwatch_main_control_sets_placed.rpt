@@ -1,0 +1,119 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Fri Apr 26 15:11:14 2019
+| Host         : DESKTOP-U967ALG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file stopwatch_main_control_sets_placed.rpt
+| Design       : stopwatch_main
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    56 |
+| Unused register locations in slices containing registers |   371 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              52 |           30 |
+| No           | Yes                   | No                     |              17 |           17 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              24 |           19 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+--------------------------+--------------------------------+------------------+----------------+
+|           Clock Signal          |       Enable Signal      |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++---------------------------------+--------------------------+--------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                  |                          | tc1/seg2_reg[1]_LDC_i_2_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | td1/seg3_reg[2]_LDC_i_2__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | td1/seg3_reg[3]_LDC_i_2_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | tc1/seg2_reg[0]_LDC_i_2_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | td1/seg3_reg[0]_LDC_i_2_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | tc1/seg2_reg[2]_LDC_i_2_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | td1/seg2_reg[1]_LDC_i_2__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | td1/seg2_reg[3]_LDC_i_2__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | td1/seg2_reg[2]_LDC_i_2__0_n_0 |                1 |              1 |
+|  tc1/seg2_reg[3]_LDC_i_1_n_0    |                          | tc1/seg2_reg[3]_LDC_i_2_n_0    |                1 |              1 |
+|  tc1/seg3_reg[0]_LDC_i_1__0_n_0 |                          | tc1/seg3_reg[0]_LDC_i_2__0_n_0 |                1 |              1 |
+|  tc1/seg3_reg[1]_LDC_i_1__0_n_0 |                          | tc1/seg3_reg[1]_LDC_i_2__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | td1/seg2_reg[0]_LDC_i_2__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | td1/seg3_reg[1]_LDC_i_2_n_0    |                1 |              1 |
+|  tc1/seg3_reg[2]_LDC_i_1_n_0    |                          | tc1/seg3_reg[2]_LDC_i_2_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | tc1/seg2_reg[3]_LDC_i_2_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | tc1/seg3_reg[0]_LDC_i_2__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | tc1/seg3_reg[1]_LDC_i_2__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | tc1/seg3_reg[2]_LDC_i_2_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  |                          | tc1/seg3_reg[3]_LDC_i_2__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  | tc1/seg2[3]_P_i_1_n_0    | tc1/seg2_reg[0]_LDC_i_1_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  | tc1/seg2[3]_P_i_1_n_0    | tc1/seg2_reg[1]_LDC_i_1_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  | tc1/seg2[3]_P_i_1_n_0    | tc1/seg2_reg[2]_LDC_i_1_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  | tc1/seg2[3]_P_i_1_n_0    | tc1/seg2_reg[3]_LDC_i_1_n_0    |                1 |              1 |
+|  tc1/seg3_reg[3]_LDC_i_1__0_n_0 |                          | tc1/seg3_reg[3]_LDC_i_2__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  | td1/seg2[3]_P_i_1__0_n_0 | td1/seg2_reg[2]_LDC_i_1__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  | td1/seg2[3]_P_i_1__0_n_0 | td1/seg2_reg[3]_LDC_i_1__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  | td1/seg2[3]_P_i_1__0_n_0 | td1/seg2_reg[0]_LDC_i_1__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  | td1/seg2[3]_P_i_1__0_n_0 | td1/seg2_reg[1]_LDC_i_1__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  | td1/seg3[3]_P_i_1__0_n_0 | td1/seg3_reg[2]_LDC_i_1__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  | td1/seg3[3]_P_i_1__0_n_0 | td1/seg3_reg[3]_LDC_i_1_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  | td1/seg3[3]_P_i_1__0_n_0 | td1/seg3_reg[1]_LDC_i_1_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  | td1/seg3[3]_P_i_1__0_n_0 | td1/seg3_reg[0]_LDC_i_1_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  | tc1/seg3[3]_P_i_1_n_0    | tc1/seg3_reg[0]_LDC_i_1__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  | tc1/seg3[3]_P_i_1_n_0    | tc1/seg3_reg[1]_LDC_i_1__0_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                  | tc1/seg3[3]_P_i_1_n_0    | tc1/seg3_reg[2]_LDC_i_1_n_0    |                1 |              1 |
+|  clk_IBUF_BUFG                  | tc1/seg3[3]_P_i_1_n_0    | tc1/seg3_reg[3]_LDC_i_1__0_n_0 |                1 |              1 |
+|  td1/seg3_reg[2]_LDC_i_1__0_n_0 |                          | td1/seg3_reg[2]_LDC_i_2__0_n_0 |                1 |              1 |
+|  td1/seg3_reg[3]_LDC_i_1_n_0    |                          | td1/seg3_reg[3]_LDC_i_2_n_0    |                1 |              1 |
+|  tc1/seg2_reg[0]_LDC_i_1_n_0    |                          | tc1/seg2_reg[0]_LDC_i_2_n_0    |                1 |              1 |
+|  tc1/seg2_reg[1]_LDC_i_1_n_0    |                          | tc1/seg2_reg[1]_LDC_i_2_n_0    |                1 |              1 |
+|  td1/seg3_reg[1]_LDC_i_1_n_0    |                          | td1/seg3_reg[1]_LDC_i_2_n_0    |                1 |              1 |
+|  tc1/seg2_reg[2]_LDC_i_1_n_0    |                          | tc1/seg2_reg[2]_LDC_i_2_n_0    |                1 |              1 |
+|  td1/seg2_reg[2]_LDC_i_1__0_n_0 |                          | td1/seg2_reg[2]_LDC_i_2__0_n_0 |                1 |              1 |
+|  td1/seg2_reg[3]_LDC_i_1__0_n_0 |                          | td1/seg2_reg[3]_LDC_i_2__0_n_0 |                1 |              1 |
+|  td1/seg0_reg[3]_LDC_i_1_n_0    |                          | td1/seg0_reg[3]_LDC_i_2_n_0    |                1 |              1 |
+|  td1/seg2_reg[0]_LDC_i_1__0_n_0 |                          | td1/seg2_reg[0]_LDC_i_2__0_n_0 |                1 |              1 |
+|  td1/seg2_reg[1]_LDC_i_1__0_n_0 |                          | td1/seg2_reg[1]_LDC_i_2__0_n_0 |                1 |              1 |
+|  td1/seg3_reg[0]_LDC_i_1_n_0    |                          | td1/seg3_reg[0]_LDC_i_2_n_0    |                1 |              1 |
+|  cdiv1/CLK                      |                          | reset_IBUF                     |                1 |              2 |
+|  clk_IBUF_BUFG                  |                          | td1/seg0[2]_i_2_n_0            |                3 |              4 |
+|  clk_IBUF_BUFG                  |                          | td1/seg0_reg[3]_LDC_i_1_n_0    |                2 |              4 |
+|  clk_IBUF_BUFG                  |                          | td1/seg0_reg[3]_LDC_i_2_n_0    |                2 |              4 |
+|  clk_IBUF_BUFG                  | cdiv1/seg0_reg[3]        | tc1/seg0[3]_i_3_n_0            |                1 |              4 |
+|  clk_IBUF_BUFG                  | tc1/seg1[3]_i_1_n_0      | tc1/seg0[3]_i_3_n_0            |                2 |              4 |
+|  clk_IBUF_BUFG                  |                          | reset_IBUF                     |                6 |             22 |
++---------------------------------+--------------------------+--------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    49 |
+| 2      |                     1 |
+| 4      |                     5 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Apr 12 11:58:29 2019
+# Process ID: 7004
+# Current directory: C:/Users/Arman/Lab_5/Lab_5.runs/synth_1
+# Command line: vivado.exe -log RCA_4bits.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RCA_4bits.tcl
+# Log file: C:/Users/Arman/Lab_5/Lab_5.runs/synth_1/RCA_4bits.vds
+# Journal file: C:/Users/Arman/Lab_5/Lab_5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RCA_4bits.tcl -notrace
